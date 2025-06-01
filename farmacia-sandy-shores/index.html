@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Hospital Sandy Shores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Farmácia Hospital Sandy Shores</h1>
+
+        <div class="produto">
+            <div class="produto-info">
+                <strong>Kit Médico</strong>R$2500
+            </div>
+            <div class="controls">
+                <input type="number" id="qtd_kit" value="1" min="1">
+                <button onclick="adicionar('Kit Médico', 2500, 'qtd_kit')">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div class="produto-info">
+                <strong>Bandagem</strong>R$1500
+            </div>
+            <div class="controls">
+                <input type="number" id="qtd_bandagem" value="1" min="1">
+                <button onclick="adicionar('Bandagem', 1500, 'qtd_bandagem')">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div class="produto-info">
+                <strong>Gazes</strong>R$1500
+            </div>
+            <div class="controls">
+                <input type="number" id="qtd_gazes" value="1" min="1">
+                <button onclick="adicionar('Gazes', 1500, 'qtd_gazes')">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div class="produto-info">
+                <strong>Adrenalina</strong>R$8000
+            </div>
+            <div class="controls">
+                <input type="number" id="qtd_adrenalina" value="1" min="1">
+                <button onclick="adicionar('Adrenalina', 8000, 'qtd_adrenalina')">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div class="produto-info">
+                <strong>Analgésicos</strong>R$800
+            </div>
+            <div class="controls">
+                <input type="number" id="qtd_analgesicos" value="1" min="1">
+                <button onclick="adicionar('Analgésicos', 800, 'qtd_analgesicos')">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="desconto">
+            <label>
+                <input type="checkbox" id="usarDesconto" onclick="atualizarTotal()"> Aplicar Desconto de 20%
+            </label>
+        </div>
+
+        <div class="gabarito">
+            <h3>Itens Adicionados</h3>
+            <ul id="listaItens"></ul>
+        </div>
+
+        <div class="total">
+            Total: <span id="total">R$ 0,00</span>
+        </div>
+
+        <div class="passaporte">
+            <label for="passaporte">Preencha com número do passaporte do cliente:</label>
+            <input type="text" id="passaporte" placeholder="Número do passaporte">
+        </div>
+
+        <div class="botoes">
+            <button onclick="limpar()">Limpar</button>
+            <button onclick="gerarNotaFiscal()">Gerar Nota Fiscal</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
