@@ -1,0 +1,133 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e8f5e9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.produto {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto-info {
+    flex: 1;
+}
+
+.produto-info strong {
+    display: block;
+    color: #2e7d32;
+    margin-bottom: 5px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="number"], input[type="text"] {
+    width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+.desconto {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+}
+
+.desconto label {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.gabarito {
+    margin-top: 20px;
+    background-color: #f1f8f1;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.gabarito h3 {
+    margin-top: 0;
+    color: #2e7d32;
+    text-align: center;
+}
+
+.gabarito ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gabarito li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 1.7em;
+    text-align: center;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.passaporte {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.botoes {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
